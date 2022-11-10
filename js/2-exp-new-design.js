@@ -186,7 +186,7 @@ function lightboxCentering() {
                                                                                    
   //console.log(`${sizeImg[i].width} x ${sizeImg[i].height}`); // отображает размер <img> элемента  
           
-    setTimeout(function recalculation() {        
+    /*setTimeout(function recalculation() {        
       const slides = document.getElementsByClassName('slideshow-container')[0]; 
       const sizeLayer = document.getElementById('gallery-layer'); 
       let heightLayer = sizeLayer.offsetHeight;                                      
@@ -198,17 +198,17 @@ function lightboxCentering() {
       let differenceLayerGallery = heightLayer - heightGallery;
       let remainder = differenceLayerGallery / 2;
       slides.style.top = remainder + "px";       
-    }, 1500);     
+    }, 1500);*/    
 
     if (portraitImg[i].height > portraitImg[i].width && widthLayer > heightLayer) {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'silver';
+      slides.style.background = 'black';
                    
     } else if (widthLayer < heightLayer) {
                                       
-      setTimeout(function recalculation() {        
+      /*setTimeout(function recalculation() {        
         const slides = document.getElementsByClassName('slideshow-container')[0]; 
         const sizeLayer = document.getElementById('gallery-layer'); 
         let heightLayer = sizeLayer.offsetHeight;                                       
@@ -220,7 +220,7 @@ function lightboxCentering() {
         let differenceLayerGallery = heightLayer - heightGallery;
         let remainder = differenceLayerGallery / 2;
         slides.style.top = remainder + "px"; 
-      }, 1500);  
+      }, 1500);*/  
                
          portraitImg[i].style.width = '100%';
                   
