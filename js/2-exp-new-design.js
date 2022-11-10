@@ -235,7 +235,7 @@ function lightboxCentering() {
 // Отслеживание изменения ориентации экрана:
 const around = 
   addEventListener("orientationchange", function () {
-    lightboxCentering();
+    setTimeout(lightboxCentering, 2000);
   });
 
 //console.log(around);
