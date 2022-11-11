@@ -198,13 +198,13 @@ function lightboxCentering() {
       let differenceLayerGallery = heightLayer - heightGallery;
       let remainder = differenceLayerGallery / 2;
       slides.style.top = remainder + "px";       
-    }, 3000);   
+    }, 2000);   
 
     if (portraitImg[i].height > portraitImg[i].width && widthLayer > heightLayer) {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'black';
+      slides.style.background = 'gray';
                    
     } else if (widthLayer < heightLayer) {
                                       
@@ -220,7 +220,7 @@ function lightboxCentering() {
         let differenceLayerGallery = heightLayer - heightGallery;
         let remainder = differenceLayerGallery / 2;
         slides.style.top = remainder + "px"; 
-      }, 3000);  
+      }, 2000);  
                
          portraitImg[i].style.width = '100%';
                   
@@ -235,7 +235,8 @@ function lightboxCentering() {
 // Отслеживание изменения ориентации экрана:
 const around = 
   addEventListener("orientationchange", function () {
-    setTimeout(lightboxCentering, 2000);
+    //setTimeout(lightboxCentering, 2000);
+    lightboxCentering();
   });
 
 //console.log(around);
