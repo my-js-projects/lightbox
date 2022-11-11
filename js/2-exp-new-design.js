@@ -204,7 +204,7 @@ function lightboxCentering() {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'silver';
+      slides.style.background = 'black';
                    
     } else if (widthLayer < heightLayer) {
                                       
