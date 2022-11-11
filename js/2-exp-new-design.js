@@ -198,11 +198,11 @@ function lightboxCentering() {
       let differenceLayerGallery = heightLayer - heightGallery;
       let remainder = differenceLayerGallery / 2;
       slides.style.top = remainder + "px";       
-    }, 2000);   
+    }, 1500);   
 
     if (portraitImg[i].height > portraitImg[i].width && widthLayer > heightLayer) {
                
-      portraitImg[i].style.width = '50%'; 
+      portraitImg[i].style.width = '42%'; 
       portraitImg[i].style.margin = 'auto';
       slides.style.background = 'gray';
                    
@@ -235,7 +235,7 @@ function lightboxCentering() {
 // Отслеживание изменения ориентации экрана:
 const around = 
   addEventListener("orientationchange", function () {
-    setTimeout(lightboxCentering, 1000);
+    setTimeout(lightboxCentering, 1500);
     //lightboxCentering();
   });
 
