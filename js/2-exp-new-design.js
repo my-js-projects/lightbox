@@ -198,7 +198,7 @@ function lightboxCentering() {
       let differenceLayerGallery = heightLayer - heightGallery;
       let remainder = differenceLayerGallery / 2;
       slides.style.top = remainder + "px";       
-    }, 2000);   
+    }, 4000);   
 
     if (portraitImg[i].height > portraitImg[i].width && widthLayer > heightLayer) {
                
@@ -220,7 +220,7 @@ function lightboxCentering() {
         let differenceLayerGallery = heightLayer - heightGallery;
         let remainder = differenceLayerGallery / 2;
         slides.style.top = remainder + "px"; 
-      }, 2000);  
+      }, 4000);  
                
          portraitImg[i].style.width = '100%';
                   
