@@ -161,14 +161,12 @@ function lightboxCentering() {
   //console.log(heightGallery);
   
   // centering algorithm:
-  if (widthGallery > heightGallery) {
-    let differenceLayerGallery = heightLayer - heightGallery;
-    let remainder = differenceLayerGallery / 2;
-    slides.style.top = remainder + "px";
-    //console.log(remainder); 
-    //console.log(heightLayer); 
-    //console.log(heightGallery);
-  } 
+  let differenceLayerGallery = heightLayer - heightGallery;
+  let remainder = differenceLayerGallery / 2;
+  slides.style.top = remainder + "px";
+  //console.log(remainder); 
+  //console.log(heightLayer); 
+  //console.log(heightGallery); 
 
   /*const landscapeImg = document.getElementsByClassName('slider-images');
   let landscape = 'landscape';
@@ -206,7 +204,7 @@ function lightboxCentering() {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'gray';
+      slides.style.background = 'black';
                    
     } else if (widthLayer < heightLayer) {
                                       
@@ -237,8 +235,8 @@ function lightboxCentering() {
 // Отслеживание изменения ориентации экрана:
 const around = 
   addEventListener("orientationchange", function () {
-    //setTimeout(lightboxCentering, 2000);
-    lightboxCentering();
+    setTimeout(lightboxCentering, 1000);
+    //lightboxCentering();
   });
 
 //console.log(around);
