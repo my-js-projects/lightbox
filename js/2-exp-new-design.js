@@ -204,11 +204,11 @@ function lightboxCentering() {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'gray';
+      slides.style.background = 'black';
                    
     } else if (widthLayer < heightLayer) {
                                       
-      setTimeout(function recalculation() {        
+      /*setTimeout(function recalculation() {        
         const slides = document.getElementsByClassName('slideshow-container')[0]; 
         const sizeLayer = document.getElementById('gallery-layer'); 
         let heightLayer = sizeLayer.offsetHeight;                                       
@@ -220,7 +220,7 @@ function lightboxCentering() {
         let differenceLayerGallery = heightLayer - heightGallery;
         let remainder = differenceLayerGallery / 2;
         slides.style.top = remainder + "px"; 
-      }, 3000);  
+      }, 3000);*/  
                
          portraitImg[i].style.width = '100%';
                   
