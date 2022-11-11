@@ -198,13 +198,13 @@ function lightboxCentering() {
       let differenceLayerGallery = heightLayer - heightGallery;
       let remainder = differenceLayerGallery / 2;
       slides.style.top = remainder + "px";       
-    }, 4000);   
+    }, 3000);   
 
     if (portraitImg[i].height > portraitImg[i].width && widthLayer > heightLayer) {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'black';
+      slides.style.background = 'gray';
                    
     } else if (widthLayer < heightLayer) {
                                       
@@ -220,7 +220,7 @@ function lightboxCentering() {
         let differenceLayerGallery = heightLayer - heightGallery;
         let remainder = differenceLayerGallery / 2;
         slides.style.top = remainder + "px"; 
-      }, 4000);  
+      }, 3000);  
                
          portraitImg[i].style.width = '100%';
                   
