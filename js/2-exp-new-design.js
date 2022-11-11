@@ -161,12 +161,14 @@ function lightboxCentering() {
   //console.log(heightGallery);
   
   // centering algorithm:
-  let differenceLayerGallery = heightLayer - heightGallery;
-  let remainder = differenceLayerGallery / 2;
-  slides.style.top = remainder + "px";
-  //console.log(remainder); 
-  //console.log(heightLayer); 
-  //console.log(heightGallery); 
+  if (widthGallery > heightGallery) {
+    let differenceLayerGallery = heightLayer - heightGallery;
+    let remainder = differenceLayerGallery / 2;
+    slides.style.top = remainder + "px";
+    //console.log(remainder); 
+    //console.log(heightLayer); 
+    //console.log(heightGallery);
+  } 
 
   /*const landscapeImg = document.getElementsByClassName('slider-images');
   let landscape = 'landscape';
@@ -204,7 +206,7 @@ function lightboxCentering() {
                
       portraitImg[i].style.width = '50%'; 
       portraitImg[i].style.margin = 'auto';
-      slides.style.background = 'black';
+      slides.style.background = 'gray';
                    
     } else if (widthLayer < heightLayer) {
                                       
