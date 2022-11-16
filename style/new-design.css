@@ -1,0 +1,1074 @@
+
+html {   
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: gray;       
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;   
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;  
+}
+
+header {
+  height: 200px;
+  background: url("../img/header.png") no-repeat center;                                    
+  background-size: cover;                     
+}
+
+/* TODO - optional */
+/*
+@media screen and (orientation: landscape) {
+  
+  header {
+    height: 270px;
+  }
+  
+}
+*/
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: auto;    		 
+}
+
+article.page {  
+  min-height: calc(100%);  
+  margin: 0;
+  padding: 15px;             
+}
+
+article.projects { 
+  max-width: 100%;  
+  min-height: calc(100%);    
+  margin: 5px auto 30px auto;  border: 1px solid red;
+  padding: 5px 0 25px 0;      
+  /*background: #e0d5c3;
+  border: 1px solid #e0d5c3;*/      
+  color: #4d4d4e; 
+}
+
+@media screen and (min-width: 764px) {
+
+  article.projects {  
+    max-width: 742px;            
+  }
+
+}
+
+.intro {
+  width: calc(100% - 16px); 
+  min-height: calc(100%);   
+  margin: 20px auto 10px auto; 
+  padding: 5px 0 0 0;          
+  /*border: 1px solid #e0d5c3;*/
+  /*background: #f6f6f6;*/
+  color: #4d4d4e;                          
+  
+  /* TODO - if there is a border or background - set for h1 margin-left: 10px,
+            margin-right: 10px, connect media for h1;
+            for .intro p remove - padding-left: 0; */
+}
+
+.intro p {
+  padding-left: 0;
+}
+
+.intro span {
+  font-weight: bold;
+}
+
+.intro p:nth-child(2) {
+  padding-left: 10px;
+  color: #4185a1; 
+  background: #f3f4f4; 
+}
+
+.picture-of-icons { 
+  position: relative;
+  margin-top: 80px; 
+  /*border: 1px solid red;*/
+}
+
+.picture-of-icons p { 
+  display: inline-block; 
+  margin-bottom: 0; 
+  padding-right: 0;
+    
+  border-top: 1px solid #4185a1; 
+  color: #4185a1;  
+  /*background: linear-gradient(170deg, 
+    #ffffff 0, #f6f7f7 30%, #dbe5e7 70%);*/
+  
+  /* TODO - option */
+  /*border-top: 1px solid #dbe5e7; /* #646aa5; 
+  color: #646aa5;    
+  background: linear-gradient(170deg, 
+    #ffffff 0, #f6f7f7 30%, #dbe5e7 70%);*/
+}
+
+.font-awesome-icon.fas.fa-meteor {
+  position: absolute;
+  left: 100px;
+  bottom: 87px; 
+  font-size: 2.5rem; 
+  color: #646aa5; 
+  opacity: 0.3;
+}
+
+.font-awesome-icon.fas.fa-sun {
+  position: absolute;
+  left: 0;
+  bottom: 57px; 
+  font-size: 1rem; 
+  color: orange; 
+  opacity: 0.6;
+}
+
+.font-awesome-icon.fas.fa-satellite-dish {
+  position: absolute;
+  left: 40px;
+  bottom: 30px; 
+  font-size: 1.5rem; 
+  color: #4185a1; /* color: #646aa5; */
+  opacity: 1;
+}
+
+/*
+.font-awesome-icon::before {
+  content: "\f753"; /* meteor
+}
+*/
+
+@media screen and (min-width: 764px) {
+
+  .intro {  
+     max-width: 742px;            
+  }
+
+}
+
+/******************************/
+
+code {
+  padding: 2px;
+  border-radius: 4px;
+  background: #fff; /* #e6e6e6 */
+  color: #b26e64;
+}
+
+/******************************/
+
+.font-awesome-list {   
+  position: absolute; 
+  top: 7px; 
+  left: 0;                  
+  color: #47a2c9; 
+}
+
+.projects {
+  width: calc(100% - 16px);
+  background: #f6f6f6;
+  border-left: 2px solid #1a88b5; 
+}
+
+.projects li > p {
+  line-height: 1.3;
+  padding-left: 5px;
+}
+
+.project-link-box { 
+  position: relative;  
+  margin-left: 12px; 
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.project-link-box > a {
+  text-decoration: none;
+}
+
+.project-link-box > a:hover {
+  /*transition: 0.2s;*/
+  opacity: 0.7; 
+  cursor: pointer;
+}
+
+.project-link {
+  display: inline-block;  
+  margin-left: 23px; 
+  margin-right: 10px;
+  padding: 5px;
+  background: linear-gradient(170deg, 
+    #ffffff 0, #f6f7f7 30%, #dbe5e7 70%);
+   
+  color: #47a2c9; 
+  border-radius: 6px;
+  /*background: #e6e6e6;*/
+}
+
+.project-code-link {
+  display: inline-block;  
+  margin-left: 23px; 
+  padding: 5px;                               
+  color: #47a2c9; 
+  border-radius: 6px;
+}
+
+.link-preview-box { 
+  position: relative;    
+  margin: 25px auto 25px auto;   
+  list-style: none;
+}
+
+.link-preview-box > a {    
+  display: block; 
+  width: 200px;
+  text-decoration: none;    
+  margin: 0 auto;
+}
+
+.link-preview-box > a:hover {
+  /*transition: 0.2s;*/
+  opacity: 0.7; 
+  cursor: pointer;
+}
+
+img.link-image {
+  display: block;     
+  max-width: calc(100%);
+  margin: 0 auto; 
+  
+  /* TODO - https://www.cssmatic.com/box-shadow - Box Shadow CSS Generator */
+  -webkit-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);       
+  box-shadow: 0px 16px 19px -16px rgba(204,204,204,1);
+  
+  /*
+  -webkit-box-shadow: 0px 16px 19px -10px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 16px 19px -10px rgba(204,204,204,1);
+  box-shadow: 0px 16px 19px -10px rgba(204,204,204,1);               
+  */
+   
+}
+
+/************************************/
+ 
+.row.for-effects {
+  max-width: calc(100% - 15px);
+  margin: 5px auto;
+  /*overflow: hidden;*/
+  border: 1px solid green; 
+}
+
+img.slider-preview  {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;     border: 1px solid lime; 
+}
+
+.slider-preview-box {
+  /*width: calc(100% - 16px);*/
+  width: 50%;
+  margin: 10px auto;     border: 1px solid red; 
+        
+}
+
+.slider-preview-box-opacity {
+  opacity: 0.2;
+}
+
+.preview-cursor {    
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.preview-cursor:hover {    
+  opacity: 0.8;      
+}
+/*
+.carousel-image-box {  border: 1px solid red;
+  display: flex;
+  max-width: 100%; overflow: hidden;  /*margin-left: -300px;
+  /*margin: 8px;
+}
+
+.carousel-image { 
+  display: flex;
+  width: 250px;
+	height: calc(150px);   border: 1px solid blue; 
+  margin: 0 8px 0 0;           
+	
+}
+
+.carousel-image img { 
+  display: block;  
+  min-width: 60%;
+  
+	                       border: 1px solid blue;          
+	
+}
+*/
+
+/*****************************/
+	  
+p {
+  line-height: 1.5;
+  padding: 0 10px 0 10px;	   
+  font-size: 1rem;
+  color: #4d4d4e; 
+}
+
+li > p {
+  line-height: 1.3;
+  margin: 12px 10px 0 0;
+  padding: 0 10px 0 0;
+}
+
+ul {
+  margin-left: 0px; 
+}
+
+h1 {
+  margin: 30px 0 0 0; 	 
+  font-family: serif; /* FreeMono */
+  font-size: 2rem; /* 32px - аналог от 16 */
+  overflow-wrap: break-word;                
+  color: #a3a3a3;   
+}
+
+
+@media screen and (max-width: 340px) {
+  
+  h1 {
+    font-size: 1.9rem;
+  }
+  
+}
+
+
+h2 {
+  margin: 20px 0 0 10px;
+  font-size: 1.5rem; /* 24px - аналог от 16 */
+  font-weight: 400;
+  color: #206987;
+}
+
+h3 {	
+  margin-bottom: 8px;
+  padding: 0 10px 0 10px;
+  font-size: 1.2rem;	
+  font-weight: normal; 
+}
+
+/*********************/
+
+.close-gallery {
+  display: none;
+  position: fixed;	        
+  top: 20px;
+  right: 30px;	    	
+  z-index: 3;
+  border-radius: 7px; 
+  color: #fff; /* color: gray; */
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.2s;   		      
+}
+	  
+.close-gallery:hover,
+.close-gallery:focus {
+  top: 17px;  
+  right: 27px;         
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 47px;	
+}
+
+/* Animation for close icon */
+
+.close-gallery {
+  animation-name: draw;
+  animation-duration: 0.6s; 
+}
+
+@keyframes draw {
+  from {transform:scale(2)} /* 2 or 0 */
+  to {transform:scale(1)}
+}
+
+/**********************/
+
+
+
+
+
+/**********************/
+.emule-load {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;	
+  background: rgba(0, 0, 0, 0.8);	    
+  
+  z-index: 1;
+}
+
+#loading-icon {
+  display: none;
+  position: absolute; 
+  top:0; 
+  left:0; 
+  width:100%; 
+  height:100%;
+  background: url(../img/loading.gif) no-repeat center center;
+  background-size: 50px;
+  z-index: 2;
+}
+
+/**********************/
+
+
+
+
+
+ 	      
+#gallery-layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;		    
+  background: rgba(0, 0, 0, 0.8); 
+  /*background: rgba(256, 256, 256, 0.7); /* layer color */
+  z-index: 1;	      
+  overflow: auto;
+  cursor: pointer;
+	
+  animation-name: rev;
+  animation-duration: 0.6s; 	
+}
+          
+.slideshow-container {
+  display: block;		    
+  position: absolute;          /*border: 1px solid red;*/
+  top: 0;   
+  right: 0;		  
+  left: 0; 
+  max-width: calc(100%); /* max-width: calc(100% - 12px); */   
+  /*height: auto;*/
+  margin: auto; 
+  /*padding: 5px;*/
+  z-index: 2;       
+  
+ /* height: calc(80%);
+	  margin: auto;  */         
+	  /*overflow: hidden;		 */
+                                                                                   	  
+}
+
+.slider-images-box {
+  /*margin: 10px auto; */
+   /*border: 1px solid blue; /*height: 100%;*/
+}
+
+img.slider-images {
+  display: block; 
+  width: 100%; /* 95% */ 
+  max-height: 100%;
+  /*object-fit: cover;
+  object-position: center; */ 
+  /*margin-bottom: 2px;	/* margin: auto; */
+  /*border: 2px solid rgba(0, 0, 0, 0.4);*/
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.4);		/*border: 1px solid lime;*/
+}	
+
+/* Точки/пули/индикаторы */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Animation for gallery */
+/*
+.slideshow-container {
+  animation-name: appearance;  
+  animation-duration: 0.6s; 
+}
+
+@keyframes appearance {                               
+  from {transform:scale(0)}
+  to {transform:scale(1)}    
+}
+*/
+
+#gallery-layer, 
+.slideshow-container {
+
+  opacity: 0;
+  animation: ani 0.8s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0.2;}
+  100% {opacity: 1;}
+}
+
+
+.slider-images-box {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+
+/***************************/
+
+/* TODO - optional */
+
+@media screen and (orientation: landscape) {
+   
+  .slideshow-container {  
+    max-width: calc(78%); 
+    margin: auto;  
+  }	
+  
+}
+
+@media screen and (min-width: 955px) {
+
+  .slideshow-container  {    
+    max-width: 720px;      
+    margin: auto;    
+  }	
+
+}
+
+/**************/
+
+.filter-blur-grayscale {
+	 /*filter: blur(2px);*/
+  filter: grayscale(100%); /* changes color to black and white */	
+}
+
+
+/*************** content in div.note *****************/
+.note {
+  position: relative;                       
+  max-width: 100%;
+  margin: 25px 10px;      
+  /*border: 1px solid rgba(0, 0, 0, 0.04);*/   
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* TODO - border with shadow */
+  background: #f0f0f0;
+  color: #4d4d4e; 
+  overflow: hidden;                                              
+}
+
+.note > p { 
+  margin-bottom: 50px;
+  padding: 8px 13px; /* TODO - set padding: 8px 13px - if border with shadow or 
+                               background is set; otherwise - padding: 8px 0px; */    
+  font-family: sans-serif;
+  font-size: 0.85rem;                     
+  /*color: #3e5e8c; */  
+         
+}
+
+.note-preview {    
+  width: 100%;    
+  /*height: 250px;
+  overflow: hidden;*/ /* TODO - in case of fixed container height - connect object-fit */     
+                                      
+}
+
+.note-preview img {
+  display: block; /* TODO - set if the height of the container and/or the height 
+                            of the image is not specified */
+  width: 100%;
+        
+  /* TODO - object-fit */
+  /*height: 100%;    
+  object-fit: cover;
+  object-position: center;*/ 
+    
+  cursor: pointer;               border: 1px solid red;
+  transition: 0.2s;  
+}
+
+.note-preview img:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 640px) {
+
+  .note-preview { 
+    float: left;      
+    width: 50%;         
+  }
+  
+  .note > p {
+    float: left;    
+    width: 50%; 
+    height: auto;
+    margin: 0;
+    text-align: center;   
+  }
+
+}
+
+
+/*** close icon ***/
+
+.icon-close-img {
+  display: inline-block;
+  position: absolute;	
+  top: calc(-50px );
+  right: calc(0px);	
+  font-size: 37px;	
+  color: gray;
+  z-index: 3;
+  transition: 0.2s;        
+}
+	  
+.icon-close-img:hover,
+.icon-close-img:focus {         
+  text-decoration: none;
+  cursor: pointer;
+  color: silver; 	  
+}
+
+	  
+@media screen and (orientation: landscape) {
+  /* TODO - for inscription Close */
+  /*
+  .icon-close-img::before {
+  
+    content: "Close";
+    position: absolute; 
+    font-size: 1rem;
+    font-weight: bold;
+    top: calc(-5px);
+    right: calc(37px);
+     
+  }*/
+ 
+  /* TODO - for the "cross in a square" icon (or class="fas fa-window-close") */
+  /*
+  .icon-close-img::before {
+  
+    content: "\f410";
+    position: absolute; 
+    font-size: 37px;
+    /*font-weight: bold; /* add for fat
+    top: calc(-20px);
+    right: calc(37px);
+     
+  }
+  */
+  
+  /* TODO - for the "cross" icon */
+  /*
+  .icon-close-img::before {
+  
+    content: "\f00d";
+    position: absolute; 
+    font-size: 37px;
+    font-weight: bold; /* does not work without bold 
+    top: calc(-10px);
+    right: calc(-37px);
+     
+  }
+  */
+  
+  /* TODO - for &times; between tags */
+  /*
+  .icon-close-img {
+    
+    position: absolute; 
+    font-size: 37px;    
+    top: calc(-10px);
+    right: calc(-40px);
+     
+  }
+  */
+    
+  .icon-close-img {   
+    content: "\f057";
+    position: absolute;
+    top: calc(0px);
+    right: calc(-50px);
+    font-size: 37px;
+    /*font-weight: bold;*/    
+     
+  }
+
+}	
+
+/*** layer, single images ***/
+.single-image {
+  display: none;		    
+  position: absolute;  border: 1px solid red;
+  top: 0;
+  right: 1px;		  
+  left: 1px;
+  /*bottom: 0px;*/ 	
+  max-width: calc(100% - 20px);      
+  margin: auto;       
+  z-index: 2;    
+}
+
+@media screen and (orientation: landscape) {
+   
+  .single-image {  
+    max-width: calc(78%); 
+    margin: auto;  
+  }
+
+}
+
+.single-image img {
+  display: block;
+	width: 100%;   
+	margin: auto;
+	/*border: 1px solid rgba(0, 0, 0, 0.4);*/
+	box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.3);   	 	 	 	
+}
+
+@media screen and (min-width: 955px) {
+
+  .single-image  {  
+    max-width: 720px;            
+  }
+
+}	
+
+#single-layer {
+
+  display: none;
+	position: fixed;
+	top: 0;
+  left: 0;   
+  right: 0;
+	bottom: 0;		    
+	background: rgba(256, 256, 256, 0.7);  
+	z-index: 1;	      
+	overflow: auto;
+	cursor: pointer;
+	
+	animation-name: rev;
+  animation-duration: 0.6s; 
+    
+}
+
+/* Animation */ 
+/*
+
+.single-image {
+    animation-name: zoom;  
+    animation-duration: 0.6s; 
+}
+
+@keyframes zoom {                               
+    from {transform:scale(0)}
+    to {transform:scale(1)}    
+}
+
+*/
+
+.single-image {
+
+  opacity: 0;
+  animation: ani 0.8s forwards;
+}
+
+@keyframes ani {
+  0% {opacity: 0.2;}
+  100% {opacity: 1;}
+}
+
+
+
+
+/*** third party links ***/
+
+.source-link-box {       
+  position: absolute;     
+  right: 14px; 
+  bottom: 5px;
+  border: 1px solid #f0f0f0;
+}
+
+.source-link-box > a {
+  text-decoration: none;
+}
+
+.source-link-box > a:hover {
+  opacity: 0.7; 
+  cursor: pointer;
+}
+
+.source-link-box .font-awesome-list {
+  position: absolute; 
+  top: 1px; 
+  left: 0;                  
+  color: #47a2c9;     
+}
+
+.source-image-link {
+  display: block;           
+  margin-left: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #f0f0f0;  
+  color: #47a2c9; 
+}
+
+@media screen and (max-width: 639px) {
+
+  .source-link-box {
+    position: absolute;      
+    right: 13px; 
+    bottom: 5px; 
+    margin-left: 26px;
+    border: 1px solid #f0f0f0;   
+  }
+  
+  .source-link-box .font-awesome-list {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    color: #47a2c9;
+  }
+  
+  .source-image-link {
+    display: block;            
+    margin-left: 20px; 
+    font-size: 0.85rem;
+    border: 1px solid #f0f0f0;   
+    color: #47a2c9; 
+  }
+
+}
+
+/*******************************/
+
+.span-box {   
+  width: calc(100% - 16px); 
+  min-height: calc(100%);   
+  margin: 35px auto 0 auto; 
+  padding: 3px 0 3px 0;          	
+  color: #4d4d4e;
+}
+
+.span-box span { 
+  padding-left: 0;
+}
+
+@media screen and (min-width: 764px) {
+
+  .span-box {  
+    max-width: 742px;            
+  }
+
+}
+
+/*******************************/
+
+footer {
+  width: 100%;
+  height: auto; /* TODO - necessarily!*/ 
+  margin-top: 5px;
+  background: #888888; /* #e2e2e2 - light gray */           
+  border: 1px solid #888888; /* TODO - border necessarily! */   				
+}
+			
+footer p {
+  padding: 10px 15px 15px;
+  color: white;   
+}	  
+
+#copyright {   
+  position: relative;
+  margin-top: 10%; /* TODO  - prevents the content part footer from collapsing 
+                              with a small amount of content */	
+  background: #888888;
+  border: 1px solid #888888;
+}
+
+#copyright hr {
+  border: none; 
+  border-top: 1px solid white;
+  margin: 0 15px; 
+  background: #2a5a5c;	
+  opacity: 0.7;   
+}
+
+#copyright p {    
+  position: relative;
+  padding: 5px;
+  font-size: 13px;
+  text-align: center;
+  color: white;            
+}
+
+.in-footer {
+  margin-bottom: 20px;	   
+  padding: 0 10px;   
+  border: 1px solid #888888;
+}
+
+.footer-content-right {
+  float: left;
+  margin: 20px 20px 20px 5px;                           
+}
+
+.icon-style {
+  height: 40px;
+  margin-left: 0; 
+  margin-top: 0;  
+  border: none;      
+}
+
+.icon-style:hover {
+  opacity: 0.6;
+  transition: 0.2s;
+  padding: 5px;
+}
+
+.in-footer::after {
+  display: table; 
+  content: "";
+  clear: both;       
+}
+
+.logo {
+  position: absolute;
+  bottom: calc(42%);
+  left: 0; 
+  right: 0;
+  width: 55px;
+  margin: auto;
+  z-index: 1;
+  opacity: 0.9;   
+}
+
+.company {
+  margin-top: 38px; 
+}
+
+/****************************/
+
+
+
+
+
+
+
+
+
+
+/* Контейнер слайд-шоу */
+/*.slideshow-container {
+  max-width: 310px; height: 180px;
+  position: relative; border: 1px solid red;
+  margin: 20px auto; 
+  
+}*/
+/*
+.mySlides {
+  width: 100%; border: 1px solid lime;
+  height: 100%;
+}
+*/
+/*img.slider-images {
+  display: block;
+  width: 100%; height: 100%;
+}*/
+
+/* Вперед и назад кнопки */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Расположите кнопку "вперед" справа */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора мыши добавьте черный цвет фона с небольшим прозрачным слоем */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Подпись текста */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Номер текста (1/3 и т.д.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* На небольших экранах уменьшите размер текста */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
